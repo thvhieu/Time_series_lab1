@@ -1,5 +1,7 @@
 # Time Series Group Project
 
+Dataset dùng chung: `data/raw/AirPassengers.csv` với hai cột `date,value`. Các task đọc trực tiếp file này.
+
 ## Phân công
 
 | Người | Thư mục |
@@ -40,3 +42,5 @@ python task5_visualization/main.py
 ```powershell
 python task6_final_report/run_all.py
 ```
+
+
