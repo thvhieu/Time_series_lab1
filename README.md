@@ -1,47 +1,5 @@
 # Time Series Group Project
 
-- Deadline chính thức: **14/10/2026**
-- Deadline nội bộ: **12/10/2026**
-- Dataset chung: `data/processed/series.csv`
-- Schema: `date,value`
-- Tần suất: tháng; seasonal period: 12
-
-## Cấu trúc đơn giản
-
-```text
-Timeseries/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── task1_acf_pacf/
-│   ├── main.py
-│   ├── report.md
-│   └── output/
-├── task2_white_noise/
-│   ├── main.py
-│   ├── report.md
-│   └── output/
-├── task3_decomposition/
-│   ├── main.py
-│   ├── report.md
-│   └── output/
-├── task4_data_quality/
-│   ├── main.py
-│   ├── report.md
-│   └── output/
-├── task5_visualization/
-│   ├── main.py
-│   ├── report.md
-│   └── output/
-├── task6_final_report/
-│   ├── run_all.py
-│   ├── report.md
-│   └── output/
-├── .gitignore
-├── README.md
-└── requirements.txt
-```
-
 ## Phân công
 
 | Người | Thư mục |
