@@ -33,5 +33,24 @@
 - **Seasonality:** Chu kỳ 12 tháng, đỉnh tháng 7–8, đáy tháng 11–12
 - **Non-stationary:** Biên độ mùa vụ mở rộng theo thời gian
 
+
 ---
 
+### 5. Kết luận: Dữ liệu có phù hợp để dự báo không?
+
+**✅ Phù hợp** — AirPassengers là một trong những dataset chuẩn mực để thực hành dự báo chuỗi thời gian, với các lý do sau:
+
+| Tiêu chí | Đánh giá |
+|----------|----------|
+| Dữ liệu đầy đủ, không bị thiếu | ✅ Tốt |
+| Có cấu trúc rõ ràng (trend + seasonality) | ✅ Tốt |
+| Đủ độ dài (144 quan sát = 12 năm) | ✅ Tốt |
+| Tần suất phù hợp (monthly) | ✅ Tốt |
+| Chuỗi không dừng (cần xử lý trước) | ⚠️ Cần differencing/log-transform |
+
+**Khuyến nghị tiền xử lý trước khi dự báo:**
+- Áp dụng **log-transform** để ổn định phương sai (biên độ mùa vụ tăng dần)
+- Áp dụng **differencing bậc 1** để loại bỏ trend
+- Áp dụng **seasonal differencing (lag=12)** để loại bỏ mùa vụ
+
+**Mô hình phù hợp:** SARIMA(p,d,q)(P,D,Q)[12] — mô hình ARIMA có thành phần mùa vụ theo chu kỳ 12 tháng.
