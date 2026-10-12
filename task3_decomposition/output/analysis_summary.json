@@ -1,0 +1,31 @@
+{
+  "dataset": "AirPassengers",
+  "observations": 144,
+  "start": "1949-01-01",
+  "end": "1960-12-01",
+  "period": 12,
+  "model": "multiplicative classical decomposition",
+  "trend_start": 118.58848096348093,
+  "trend_end": 503.7990481740477,
+  "trend_total_change_percent": 324.8296664911253,
+  "trend_cagr_percent": 12.907569861997882,
+  "trend_linear_slope_per_month": 2.6726182748657568,
+  "trend_linear_r_squared": 0.9860722356812436,
+  "trend_strength": 0.9932935167735935,
+  "seasonal_strength": 0.9292807321301718,
+  "seasonal_peak_month": 7,
+  "seasonal_trough_month": 11,
+  "seasonal_peak_index": 1.2294221423434613,
+  "seasonal_trough_index": 0.7978817309001659,
+  "seasonal_peak_to_trough_change_percent": 54.08576167754007,
+  "residual_centered_mean": 0.00038711772684128245,
+  "residual_centered_std": 0.03536583360118681,
+  "residual_acf_lag1": 0.4594365085122662,
+  "ljung_box_pvalues": {
+    "12": 2.2166758280143447e-18,
+    "24": 1.0154630722249876e-27
+  },
+  "white_noise_at_lag12_alpha_005": false,
+  "normality_test_pvalue": 0.16616832085680625,
+  "alpha": 0.05
+}
