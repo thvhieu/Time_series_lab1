@@ -21,3 +21,11 @@ Về tự tương quan: Chuỗi White noise thể hiện tính độc lập hoà
 Về xu hướng và chu kỳ: White noise mang tính ngẫu nhiên thuần túy, không chứa xu hướng hay mùa vụ; ngược lại, AirPassengers phản ánh rõ rệt xu hướng tăng trưởng dài hạn và tính mùa vụ theo năm.
 
 Về khả năng dự báo: Chuỗi White noise không thể dự báo dựa vào dữ liệu quá khứ do bản chất ngẫu nhiên hoàn toàn, còn chuỗi AirPassengers rất thích hợp và tiềm năng để xây dựng các mô hình dự báo chuỗi thời gian chuyên sâu như ARIMA hoặc SARIMA.
+
+## 5 dòng mô tả sự khác nhau giữa White Noise và AirPassengers
+
+1. **Tự tương quan:** ACF của White Noise có các hệ số gần bằng 0 ở tất cả các lag và nằm trong ngưỡng tin cậy 95%, trong khi ACF của AirPassengers có hệ số rất cao và giảm rất chậm qua các lag.
+2. **Tính mùa vụ:** ACF của White Noise không có dạng sóng lặp lại, còn ACF của AirPassengers xuất hiện các đỉnh lặp theo chu kỳ 12 tháng thể hiện rõ tính mùa vụ.
+3. **Xu hướng:** White Noise dao động ngẫu nhiên quanh mức 0, không có xu hướng tăng hay giảm; AirPassengers có xu hướng tăng trưởng rõ rệt theo thời gian.
+4. **Tính dừng (Stationarity):** White Noise là chuỗi dừng với trung bình và phương sai ổn định theo thời gian, còn AirPassengers là chuỗi không dừng do có xu hướng và mùa vụ.
+5. **Khả năng dự báo:** White Noise không thể dự báo từ dữ liệu quá khứ vì các quan sát độc lập hoàn toàn với nhau, trong khi AirPassengers có cấu trúc tự tương quan mạnh nên phù hợp để xây dựng các mô hình dự báo như ARIMA hoặc SARIMA.
