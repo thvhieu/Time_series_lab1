@@ -4,14 +4,14 @@ Dataset dùng chung: `data/raw/AirPassengers.csv` với hai cột `date,value`. 
 
 ## Phân công
 
-| Người | Thư mục |
-|---|---|
-| 1 | `task1_acf_pacf/` |
-| 2 | `task2_white_noise/` |
-| 3 | `task3_decomposition/` |
-| 4 | `task4_data_quality/` |
-| 5 | `task5_visualization/` |
-| 6 | `task6_final_report/` |
+| Họ tên  | MSSV | Mức độ hoàn thành |Nhiệm vụ|
+|---|---|---|--|
+| **Trương Hà Vũ Hiệu(L)**| **052206008786**| **100%** | **Task6_final_report**|
+| **Phan Ngọc Khoa** | **049206007332** | **100%** | **Task5_visualization**|
+| **Trương Lâm Hưng**| **079206003395** | **100%** | **Task1_acf_pacf**|
+| **Võ Thị Mỹ Quyên**| **051306013429** | **100%** | **Task2_white_noise**|
+| **Lê Ngọc Ánh** |  **051306013023** | **100%** | **Task4_data_quality**|
+|**Võ Huy Hoàng**| **089206000185** | **100%** | **Task3_decomposition**|
 
 Mỗi người chỉ sửa thư mục của mình. Trong đó:
 
