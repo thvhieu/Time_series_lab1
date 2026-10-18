@@ -2,6 +2,40 @@
 
 Dataset dùng chung: `data/raw/AirPassengers.csv` với hai cột `date,value`. Các task đọc trực tiếp file này.
 
+## Mô tả Dataset — AirPassengers
+
+### 1. Tổng quan
+
+| Thuộc tính | Giá trị |
+|------------|---------|
+| Tên dataset | AirPassengers |
+| Nguồn | Box & Jenkins (1976) |
+| Số dòng | **144** |
+| Khoảng thời gian | **01/1949 – 12/1960** |
+| Tần suất | Hàng tháng |
+| Đơn vị | Nghìn hành khách |
+
+### 2. Mô tả cột 
+| Cột | Kiểu dữ liệu | Mô tả |
+|---|---|---|
+| date | datetime | Ngày tháng |
+| value | Integer | Số lượng hành khách quốc tế |
+
+### 3. Thống kê mô tả
+
+| | Giá trị |
+|---|---------|
+| Min | **104** (tháng 11/1949) |
+| Max | **622** (tháng 7/1960) |
+| Trung bình | ~280 |
+| Missing | 0  |
+| Trùng lặp | 0 |
+
+### 4. Đặc điểm chuỗi
+- **Trend:** Tăng trưởng ~4 lần từ 1949 → 1960
+- **Seasonality:** Chu kỳ 12 tháng, đỉnh tháng 7–8, đáy tháng 11–12
+- **Non-stationary:** Biên độ mùa vụ mở rộng theo thời gian
+
 ## Phân công
 
 | Họ tên  | MSSV | Mức độ hoàn thành |Nhiệm vụ|
@@ -13,11 +47,12 @@ Dataset dùng chung: `data/raw/AirPassengers.csv` với hai cột `date,value`. 
 | **Lê Ngọc Ánh** |  **051306013023** | **100%** | **Task4_data_quality**|
 |**Võ Huy Hoàng**| **089206000185** | **100%** | **Task3_decomposition**|
 
-Mỗi người chỉ sửa thư mục của mình. Trong đó:
+Cấu trúc lưu trữ:
 
-- `main.py`: code.
-- `report.md`: phương pháp, kết quả, nhận xét.
-- `output/`: biểu đồ và file kết quả.
+- `script/`: code thực thi từng task.
+- `docs/report/`: báo cáo phương pháp, kết quả, nhận xét.
+- `docs/visual/`: biểu đồ hình ảnh (.png).
+- `data/process/`: dữ liệu sau xử lý (.csv, .json).
 
 ## Cài đặt
 
@@ -30,17 +65,17 @@ python -m pip install -r requirements.txt
 ## Chạy từng phần
 
 ```powershell
-python task1_acf_pacf/main.py
-python task2_white_noise/main.py
-python task3_decomposition/main.py
-python task4_data_quality/main.py
-python task5_visualization/main.py
+python script/task1_acf_pacf.py
+python script/task2_white_noise.py
+python script/task3_decomposition.py
+python script/task4_data_quality.py
+python script/task5_visualization.py
 ```
 
 ## Chạy toàn bộ
 
 ```powershell
-python task6_final_report/run_all.py
+python script/run_all.py
 ```
 
 
