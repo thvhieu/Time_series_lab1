@@ -49,8 +49,9 @@ Dataset dùng chung: `data/raw/AirPassengers.csv` với hai cột `date,value`. 
 
 Cấu trúc lưu trữ:
 
-- `script/`: code thực thi từng task.
-- `docs/report/`: báo cáo phương pháp, kết quả, nhận xét.
+- `final_report.ipynb`: **Notebook báo cáo tổng hợp toàn bộ đồ án** (kết hợp code chạy trực tiếp, biểu đồ và nhận xét chuyên sâu).
+- `script/`: code thực thi từng task riêng lẻ.
+- `docs/report/`: báo cáo phương pháp, kết quả, nhận xét dạng markdown.
 - `docs/visual/`: biểu đồ hình ảnh (.png).
 - `data/process/`: dữ liệu sau xử lý (.csv, .json).
 

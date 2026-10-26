@@ -19,16 +19,19 @@ def main() -> None:
     air_passengers = get_rdataset("AirPassengers").data
     ap_series = air_passengers['value']
 
-    # 3. Vẽ biểu đồ ACF
+    # 3. Vẽ biểu đồ chuỗi thời gian và ACF của White Noise
     plt.figure(figsize=(12, 5))
 
     plt.subplot(1, 2, 1)
-    plot_acf(white_noise, lags=40, ax=plt.gca())
-    plt.title("ACF - White Noise")
+    plt.plot(white_noise[:200], color='tab:red', linewidth=1)
+    plt.axhline(0, color='black', linestyle='--', linewidth=0.8)
+    plt.title("Gaussian White Noise (First 200 points)")
+    plt.xlabel("Index")
+    plt.ylabel("Value")
 
     plt.subplot(1, 2, 2)
-    plot_acf(ap_series, lags=40, ax=plt.gca())
-    plt.title("ACF - AirPassengers")
+    plot_acf(white_noise, lags=40, ax=plt.gca(), color='tab:red')
+    plt.title("ACF - White Noise (40 lags)")
 
     plt.tight_layout()
 
